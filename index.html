@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="mx-auto justify-contents-center">
+    <div class="container mx-auto">
+        <div class="card bg-transparent" style="width: 25rem;">
+            <div class="card-body">
+                <h2 class="card-title text-light fs-2">Weather App 🌨️❄️⛅</h2>
+                <h6 class="card-subtitle mb-2 text-light"> <marquee behavior="" direction="right">Forecasting Your Day, Every Step of the Way.</marquee></h6>
+                <input type="text" class="form-control shadow-sm" id="search" width="450px" placeholder="Search" style="border-top: none; border-right:none; border-left:none;">
+                <button class="form-control my-2 shadow-sm btn btn-dark" type="button" onclick="fetchMe()">Check Weather <i class="bi bi-search"></i></button>
+                <br>
+                <br>
+                <h6 class="card-sub mb-2 text-body-secondary text-center" style="font-size: 150px;" id="degree">27℃</h6>
+           <div id="nameC"></div>
+                <div class="cards">
+                    <div class="card red">
+                        <p class="tip">SYS</p>
+                        <p class="second-text" id="name"> This space is for whats response we get as the Sunrise</p>
+                    </div>
+                    <div class="card blue">
+                        <p class="tip" id="name">LONG AND LAT</p>
+                        <p class="second-text" id="name">Where the longitude ans latitude is Showing</p>
+                    </div>
+                    <div class="card green">
+                        <p class="tip" id="humidity">WEATHER</p>
+                        <p class="second-text">This is a weather Application</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
